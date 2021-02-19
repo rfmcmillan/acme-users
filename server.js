@@ -6,7 +6,7 @@ const faker = require('faker');
 console.log(faker.name.firstName());
 console.log(faker.name.firstName());
 
-app.use('/src', express.static(path.join(__dirname, 'src')));
+app.use('/dist', express.static(path.join(__dirname, 'dist')));
 app.use('/node_modules', express.static(path.join(__dirname, 'node_modules')));
 
 app.get('/', (req, res, next) => {
